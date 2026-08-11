@@ -1,23 +1,26 @@
 # ChronaKey Releases
 
-**想要一个不用登录账号、不会把 2FA 密钥传到云端的身份验证器？这就是 ChronaKey。**
+ChronaKey 是一款在本地运行的 2FA 验证器。
 
-ChronaKey 可以扫码、读取二维码图片或手动输入密钥，为 GitHub、Google、Microsoft 等支持
-标准 TOTP/HOTP 的服务生成验证码。二维码、密钥和加密备份都由客户端在你的设备上处理。
+你可以扫描二维码、选择二维码图片或输入密钥，为 GitHub、Google、Microsoft 等账号
+生成验证码。
 
-## 立即下载
+ChronaKey 不需要注册账号，也不会把你的密钥同步到云端。账户数据和加密备份都保存在
+你自己的设备上。
 
-| 你的设备 | 下载 | 安装提醒 |
+## 下载测试版
+
+| 平台 | 下载 | 说明 |
 | --- | --- | --- |
-| Android 手机 | [下载正式签名 APK](https://github.com/rw0104/ChronaKey-Releases/releases/download/v0.1.0-alpha.1/ChronaKey-Android-release.apk) | 已安装 Debug 版时需先备份并卸载旧版 |
-| Windows 10/11 x64 | [下载 Windows 安装程序](https://github.com/rw0104/ChronaKey-Releases/releases/download/v0.1.0-alpha.1/ChronaKey-Windows-x64-unsigned-setup.exe) | 当前未签名，可能出现 SmartScreen 提示 |
+| Android | [下载 Android 安装包](https://github.com/rw0104/ChronaKey-Releases/releases/download/v0.1.0-alpha.1/ChronaKey-Android-release.apk) | 如果安装过早期测试版，请先备份数据再卸载旧版 |
+| Windows 10/11 x64 | [下载 Windows 安装程序](https://github.com/rw0104/ChronaKey-Releases/releases/download/v0.1.0-alpha.1/ChronaKey-Windows-x64-unsigned-setup.exe) | 安装包暂未签名，Windows 可能显示安全提示 |
 
-👉 [查看版本说明和全部下载文件](https://github.com/rw0104/ChronaKey-Releases/releases/tag/v0.1.0-alpha.1)
+[查看版本说明和所有下载文件](https://github.com/rw0104/ChronaKey-Releases/releases/tag/v0.1.0-alpha.1)
 
-> 当前是 Alpha 测试版。先用测试账户体验，不要立即迁移唯一一份生产 2FA 密钥；
-> 请保留原验证器和恢复码。
+> 当前版本仍在测试阶段。建议先添加一个不重要的账号体验，并继续保留原来的验证器和
+> 恢复码。确认备份与恢复功能符合预期后，再考虑迁移常用账号。
 
-## 你可以用它做什么
+## 功能
 
 - 用相机扫描 2FA 二维码。
 - 从截图或二维码图片中添加账户。
@@ -26,7 +29,7 @@ ChronaKey 可以扫码、读取二维码图片或手动输入密钥，为 GitHub
 - 把账户保存在本地加密 Vault 中。
 - 导出加密备份，在其他 ChronaKey 客户端恢复。
 
-## 为什么是本地运行
+## 数据保存在本地
 
 ChronaKey 当前不提供账号系统、云同步、广告或遥测。正式客户端不依赖远程页面，也不会把
 二维码和 OTP 密钥上传到服务器。你可以自行决定如何保管和转移加密备份。
@@ -57,7 +60,7 @@ sha256sum -c SHA256SUMS
 ## 安全原则
 
 - 安装前核对文件名、版本和 SHA-256。
-- Alpha 阶段不要迁移唯一一份生产 2FA 密钥。
+- 测试阶段不要立即迁移重要账号，并继续保留原验证器和恢复码。
 - 不要在 Issue、截图或日志中提交二维码、Base32 密钥、恢复密码或恢复码。
 - 安全问题请按照 [SECURITY.md](SECURITY.md) 私下报告。
 

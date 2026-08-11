@@ -1,0 +1,15 @@
+ChronaKey Binary Evaluation License
+
+Copyright (c) 2026 ChronaKey. All rights reserved.
+
+Permission is granted to download, install, and evaluate the ChronaKey Alpha
+binaries for lawful personal testing. Redistribution, modification, commercial
+resale, and removal of product notices are not permitted without prior written
+authorization. Nothing in this notice limits rights that cannot legally be
+restricted in the user's jurisdiction.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND. KEEP AN
+INDEPENDENT BACKUP OF EVERY AUTHENTICATION SECRET AND RECOVERY CODE.
+
+This Alpha notice is an operational placeholder and should be reviewed by
+qualified counsel before commercial release.

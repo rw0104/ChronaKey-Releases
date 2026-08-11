@@ -1,0 +1,10 @@
+# Release binaries belong in GitHub Releases, not Git history.
+artifacts/
+*.apk
+*.AppImage
+*.deb
+*.dmg
+*.exe
+*.ipa
+*.msi
+*.zip
